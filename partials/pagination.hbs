@@ -1,0 +1,5 @@
+<nav class="pagination" role="pagination">
+    {{#if prev}}<a class="newer-posts" href="{{page_url prev}}">&larr; 上一页</a> <span class="separator">|</span> {{/if}}
+    <span class="page-number"> {{page}} / {{pages}}</span>
+    {{#if next}} <span class="separator">|</span> <a class="older-posts" href="{{page_url next}}">下一页&rarr;</a>{{/if}}
+</nav>

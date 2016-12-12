@@ -27,6 +27,9 @@
 	    {{ghost_head}}
 	</head>
 	<body class="{{body_class}}">
+		<main id="content">
+			{{{body}}}
+		</main>
 		<header style="display:block;text-align:center;" id="header">
 			{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
 			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
@@ -34,9 +37,6 @@
 			{{> follow}}
 			{{navigation}}
 		</header>
-		<main id="content">
-			{{{body}}}
-		</main>
 		<footer id="footer">
 			<section id="footer-message">&copy; {{date format='YYYY'}} {{@blog.title}}</section>
 		</footer>

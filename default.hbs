@@ -9,10 +9,8 @@
 	    <meta name="description" content="{{meta_description}}" />
 	    <link rel="shortcut icon" href="{{@blog.logo}}"/>
 			{{! Styles }}
-	    <!-- <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'> -->
-			<!-- <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'> -->
-			<link rel="stylesheet" type="text/css" href="{{asset '/styles/font-awesome.css'}}>
-			<link rel="stylesheet" href="https://dn-huntersnk.qbox.me/default.min.css">
+			<link rel="stylesheet" type="text/css" href="{{asset '/styles/font-awesome.css'}}">
+			<link rel="stylesheet" type="text/css" href="{{asset '/styles/default.min.css'}}">
 			<link rel="stylesheet" type="text/css" href="{{asset '/styles/crisp.css'}}">
 			{{! Responsive Meta Tags }}
 	    <meta name="HandheldFriendly" content="True" />
@@ -28,7 +26,7 @@
 	</head>
 	<body class="{{body_class}}">
 		<main id="content">
-			{{{body}}}
+			{{{body}}} 
 		</main>
 		<header style="display:block;text-align:center;" id="header">
 			{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
@@ -36,12 +34,31 @@
 			<p>{{@blog.description}}</p>
 			{{> follow}}
 			{{navigation}}
+			<br>
+			<form>
+      	<input id="search-field" placeholder="Search" />
+    	</form>
 		</header>
 		<footer id="footer">
 			<section id="footer-message">&copy; {{date format='YYYY'}} {{@blog.title}}</section>
 		</footer>
 	{{ghost_foot}}
-	<script src="https://dn-huntersnk.qbox.me/highlight.min.js"></script>
+	<h4 id="searchtext" class="results-hide">Search Results:</h4>
+	<section id="results"></section>
+
+	<script type="text/javascript" src="{{asset "js/highlight.min.js"}}"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	<script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
+  <script type="text/javascript">
+  	// $("#searchtext").addClass("results-hide");
+		$("#search-field").ghostHunter({
+    results: "#results",
+    onKeyUp: true,
+    displaySearchInfo: false,
+    before: function(){ 
+         $("#searchtext").removeClass("results-hide");}
+		});
+  </script>
 	</body>
 </html>

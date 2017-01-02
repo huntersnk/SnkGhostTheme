@@ -27,6 +27,11 @@ header {
 	height:100%;
 	width:11.5em;
 }
+
+.results-hide{
+    display: none;
+}
+
 #content {
 	display: block;
 	width: 80%;

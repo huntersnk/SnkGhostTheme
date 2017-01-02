@@ -37,6 +37,7 @@
 			<br>
 			<form>
       	<input id="search-field" placeholder="Search" />
+      	<input type="submit" value="search">
     	</form>
 		</header>
 		<footer id="footer">
@@ -54,7 +55,7 @@
   	// $("#searchtext").addClass("results-hide");
 		$("#search-field").ghostHunter({
     results: "#results",
-    onKeyUp: true,
+    // onKeyUp: true,
     displaySearchInfo: false,
     before: function(){ 
          $("#searchtext").removeClass("results-hide");}

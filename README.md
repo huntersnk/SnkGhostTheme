@@ -1,9 +1,13 @@
 # SnkGhostTheme
 
-version : 0.4.3
-update @ 20170102
+version : 0.4.7
+update @ 20171005
 
 #### changelog
+1. remove social network weibo and twitter
+2. add github URL
+
+#### old changelog
 1. h1-h5 font size changed
 2. quote color and bgcolor change
 3. tag bgcolor change

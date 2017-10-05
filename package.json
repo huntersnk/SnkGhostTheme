@@ -1,7 +1,7 @@
 {
     "name": "snk-theme",
     "description": "a minimalist based on crisp theme",
-    "version": "0.4.6",
+    "version": "0.4.7",
     "engines": {
         "ghost": ">=1.0.0"
     },

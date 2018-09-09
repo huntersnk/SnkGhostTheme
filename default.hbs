@@ -34,8 +34,7 @@
 			{{navigation}}
 			<br>
 			<form>
-      	<input id="search-field" placeholder="Search" />
-      	<input type="submit" value="search">
+      	<input id="search-field" placeholder="Search" class="searchbox" />
     	</form>
 		</header>
 		<footer id="footer">
@@ -45,11 +44,11 @@
 	<h4 id="searchtext" class="results-hide">Search Results:</h4>
 	<section id="results"></section>
 
-	<script type="text/javascript" src="{{asset "js/highlight.min.js"}}"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- <script type="text/javascript" src="{{asset "js/highlight.min.js"}}"></script>
+	<script>hljs.initHighlightingOnLoad();</script> -->
 	<script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
-  <script type="text/javascript" src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
-  <script type="text/javascript">
+<!--   <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script> -->
+<!--   <script type="text/javascript">
   	// $("#searchtext").addClass("results-hide");
 		$("#search-field").ghostHunter({
     results: "#results",
@@ -58,6 +57,6 @@
     before: function(){ 
          $("#searchtext").removeClass("results-hide");}
 		});
-  </script>
+  </script> -->
 	</body>
 </html>

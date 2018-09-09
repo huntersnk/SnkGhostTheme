@@ -1,13 +1,17 @@
 {
     "name": "snk-theme",
-    "description": "a minimalist based on crisp theme",
-    "version": "0.4.7",
+    "keywords": "ghost-theme",
+    "description": "a theme for ghost 2.0 based on crisp theme",
+    "version": "0.5.1",
+    "keywords": ["ghost-theme"],
     "engines": {
-        "ghost": ">=1.0.0"
+        "ghost": ">=2.0.0"
     },
     "license": "MIT",
     "author": {
-        "email": "notsnk@gmail.com"
+        "name": "HunterSNK",
+        "email": "freeone1991@gmail.com",
+        "url": "https://huntersnk.com"
     },
     "config": {
         "posts_per_page": 10

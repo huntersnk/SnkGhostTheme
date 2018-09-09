@@ -1,11 +1,12 @@
 # SnkGhostTheme
 
-version : 0.4.7
-update @ 20171005
+version : 0.5.1 alpha
+update @ 20180909
 
 #### changelog
-1. remove social network weibo and twitter
-2. add github URL
+1. a new home page basic page,need optimize
+2. remove search function,tbd
+
 
 #### old changelog
 1. h1-h5 font size changed
@@ -14,16 +15,20 @@ update @ 20171005
 4. change version 0.2 to 0.3.0
 5. When width <= 800,moving header behind the content
 6. add search function based on ghostHunterJs and JQuary
+7. add github URL
+8. remove social network weibo and twitter
+9. set a new home page
 
 
 #### tbd
 * change font
-* set a new home page
 * refactory all assets
+* support ghost v2.0
+* layout optimize
  
  MIT License
 
-Copyright (c) [2017] [huntersnk]
+Copyright (c) [2018] [huntersnk]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

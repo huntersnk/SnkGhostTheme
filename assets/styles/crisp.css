@@ -28,8 +28,15 @@ header {
 	width:11.5em;
 }
 
+.searchbox {
+	width: 7em;
+	border: 1px hsl(204, 86%, 53%) solid;
+	border-radius: 290486px;
+}
+
 .results-hide{
     display: none;
+
 }
 
 #content {

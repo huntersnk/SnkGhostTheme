@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+/* Basic Typography */
+html, body {
+	font-size: 1em;
+	line-height: 1.65em;
+	font-family: PingFang SC, Helvetica,  Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+	color: hsl(0, 0%, 4%);
+}
+html {
+	height: 100%;
+}
+
+/*Header*/
+
+.header {
+	border-right: 1px #eee solid;
+	padding: 1em;
+	position:fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:9em;
+}
+
+/* Sidebar */
+header h1 {
+	font-size:1.5em;
+	margin-top:0.8em;
+	margin-bottom:0.6em;
+}
+header h1 a {
+	color:#444;
+}
+header h1 a:hover {
+	text-decoration:none;
+}
+header #logo img {
+	width:9em;
+	height:9em;
+	border-radius:4.5em;
+	-moz-border-radius: 4.5em;
+	-webkit-border-radius: 4.5em;
+	border: none;
+}
+#follow-icons {
+	font-size: 0.7em;
+	margin-top: -0.7em;
+	margin-bottom: 1.5em;
+}
+#follow-icons a {
+	color: #ccc;
+}
+#follow-icons span {
+	vertical-align:top;
+	margin-left:-0.15em;
+	margin-right:-0.15em;
+}
+#follow-icons span .fa-stack-1x {
+	font-size:1.05em;
+	line-height:1.9em;
+}
+header h6 {
+	margin-top:0.5em;
+}
+
+.searchbox {
+	width: 7em;
+	border: 1px hsl(204, 86%, 53%) solid;
+	border-radius: 290486px;
+}
+
+/*Outline.*/
+
+.outline-area {
+	width: 12em;
+	height:100%;
+	border-right: 1px #eee solid;
+	position: fixed;
+	top: 0;
+}
+
+.outline-item {
+
+}
+
+
+
+
+
+
+/*Content*/
+
+.content {
+	margin-left: 12em;
+	display: block;
+/*	width: 100%;*/
+}
+
+/*Blog-Post*/
+
+.blog-post {
+	margin-left: 12em;
+	padding: 2em 5em 2em 3em;
+}

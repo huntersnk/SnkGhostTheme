@@ -1,38 +1,15 @@
-* {
-	padding: 0;
-	margin: 0;
-}
-/* Basic Typography */
-html, body {
-	font-size: 1em;
-	line-height: 1.65em;
-	/*font-family: "Open Sans", sans-serif;*/
-	font-family: PingFang SC, Helvetica,  Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
-	/*font-weight: 300;*/
-	color:#444;
-}
-html {
-	height: 100%;
-}
+
 body {
 	padding: 2em 2.5em 1em 20em;
 }
 /* Blocks */
-header {
-	border-right: 1px #eee solid;
-	padding: 2em;
-	position:fixed;
-	top: 0;
-	left: 0;
-	height:100%;
-	width:11.5em;
-}
 
-.searchbox {
-	width: 7em;
-	border: 1px hsl(204, 86%, 53%) solid;
-	border-radius: 290486px;
-}
+
+/*ouline area*/
+
+
+
+
 
 .results-hide{
     display: none;
@@ -41,7 +18,7 @@ header {
 
 #content {
 	display: block;
-	width: 80%;
+	width: 100%;
 }
 footer {
 	padding: 1em 0em 2.5em 0em;
@@ -49,6 +26,9 @@ footer {
 	line-height: 1.5em;
 	color: #888;
 }
+
+
+
 article {
 	border-bottom: 0.1em #eee solid;
 	padding-bottom: 1.7em;
@@ -107,7 +87,7 @@ a {
 	font-weight:700;
 	text-decoration:none;
 	/*color: #5cc265;  Change Link Color */
-	color: #2fb5dd;
+	color: hsl(204, 86%, 53%);
 }
 a:hover {
 	text-decoration:underline;
@@ -119,7 +99,7 @@ strong {
 	font-weight: 500;
 }
 blockquote {
-	border-left: 0.4em solid #2fb5dd;
+	border-left: 0.4em solid hsl(204, 86%, 53%);
 	padding-left: 1.2em;
 	font-size: 1em;
 	background-color: #ebeef2;
@@ -214,7 +194,7 @@ h3.post-title {
 	color: #ccc;
 }
 .taglist a {
-	background-color:#2fb5dd;
+	background-color:hsl(204, 86%, 53%);
 	color:#fff;
 	display: inline-block;
 	line-height: 1.5em;
@@ -274,7 +254,7 @@ footer a:hover {
 	}
 	#content {
 		margin-left: 0;
-		padding: 2em 2em 1em 2em;
+/*		padding: 2em 2em 1em 2em;*/
 		width: auto;
 	}
 	footer {
@@ -287,7 +267,7 @@ footer a:hover {
 		padding: 1.2em 1.2em 0.6em 1.2em;
 	}
 	#content {
-		padding: 1.2em 1.2em 0.6em 1.2em;
+/*		padding: 1.2em 1.2em 0.6em 1.2em;*/
 	}
 	footer {
 		padding: 0 1.5em 1.2em 1.5em;
@@ -296,3 +276,5 @@ footer a:hover {
 		margin-left: 2em;
 	}
 }
+
+

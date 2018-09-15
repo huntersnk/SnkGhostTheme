@@ -1,11 +1,12 @@
 # SnkGhostTheme
 
-version : 0.5.1 alpha
-update @ 20180909
+version : 0.5.2 alpha
+update @ 20180915
 
 #### changelog
-1. a new home page basic page,need optimize
-2. remove search function,tbd
+1. A new refactory ongoing
+2. ghost v2.0 support tbd
+3. layout optimize tbd
 
 
 #### old changelog
@@ -18,14 +19,10 @@ update @ 20180909
 7. add github URL
 8. remove social network weibo and twitter
 9. set a new home page
+10. remove search function,tbd
+11. a new home page basic page,need optimize
 
 
-#### tbd
-* change font
-* refactory all assets
-* support ghost v2.0
-* layout optimize
- 
  MIT License
 
 Copyright (c) [2018] [huntersnk]

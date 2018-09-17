@@ -1,5 +1,20 @@
-{{#foreach posts}}
-<section id="{{comment_id}}" class="{{post_class}}">
-	<h3 class="post-title"><a href="{{url}}">{{title}}</a><span class="separator"></span><span style="float:right;">{{date published_at format='YYYY.MM.DD'}}<span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}</h3>
-</section>
-{{/foreach}}
+<div class="post-list">
+
+	{{#foreach posts}}
+		<section id="{{comment_id}}" class="post-item">
+			<a href="{{url}}" class="post-title">{{title}}<span style="float:right;">{{date published_at format='YYYY.MM.DD'}}</span></a>
+		</section>
+	{{/foreach}}
+
+	<nav class="pagi" role="navigation">
+		{{pagination}}
+	</nav>
+
+	<div class="footer_area">
+		{{> footer}}
+	</div>
+	<div>
+		<h4 id="searchtext" class="results-hide">Search Results:</h4>
+		<section id="results"></section>
+	</div>
+</div>

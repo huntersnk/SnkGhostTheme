@@ -12,3 +12,14 @@
 	</article>
 </div>
 {{/post}}
+<script type="text/javascript">
+	window.onload = function(){
+	    var outline = document.getElementById('outline-table');
+	    if(getTocMarkup(document)){
+	        outline.innerHTML = getTocMarkup(document);
+	    }else{
+	        outline.innerHTML ="nothing here";
+	        // handle remove outline and cotent margin
+	    }
+	    };
+</script>

@@ -2,7 +2,7 @@
     "name": "snk-theme",
     "keywords": "ghost-theme",
     "description": "a theme for ghost 2.0 based on crisp theme",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "keywords": ["ghost-theme"],
     "engines": {
         "ghost": ">=2.0.0"

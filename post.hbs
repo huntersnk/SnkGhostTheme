@@ -1,15 +1,17 @@
 {{!< default}}
 {{#post}}
-<div class="outline-area">
-	{{> outline}}
-</div>
-<div class="blog-post">
-	<article id="{{comment_id}}" class="{{post_class}}">
-		<div class="post-stamp">{{date published_at format='YYYY-MM-DD'}}<span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span><i class="fa fa-star-o feature-star"></i>{{/if}}</div>
-		<h1 class="post-title">{{title}}</h1>
-		{{content}}
-	  {{> comments}}
-	</article>
+<div class="post">
+	<div class="outline-area">
+		{{> outline}}
+	</div>
+	<div class="blog-post">
+		<article id="{{comment_id}}" class="{{post_class}}">
+			<div class="post-stamp">{{date published_at format='YYYY-MM-DD'}}<span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span>{{#if featured}}<span class="separator"> &middot; </span>{{/if}}</div>
+			<h1 class="post-title">{{title}}</h1>
+			{{content}}
+		  {{> comments}}
+		</article>
+	</div>
 </div>
 {{/post}}
 <script type="text/javascript">
@@ -18,7 +20,7 @@
 	    if(getTocMarkup(document)){
 	        outline.innerHTML = getTocMarkup(document);
 	    }else{
-	        outline.innerHTML ="nothing here";
+	        outline.innerHTML ="no table of content";
 	        // handle remove outline and cotent margin
 	    }
 	    };

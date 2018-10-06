@@ -15,7 +15,7 @@ function createTocMarkup(headers) {
                 if (ranOnce) {
                     output += "&nbsp;";
                 }
-                output += "<ol style=\"margin-bottom:0px\"><li>";
+                output += "<ul style=\"margin-bottom:0px\"><li>";
                 prevLevel += 1;
                 ranOnce = true;
             }
@@ -23,7 +23,7 @@ function createTocMarkup(headers) {
             output += "</li><li>";
         } else if (currLevel < prevLevel) {
             while (currLevel < prevLevel) {
-                output += "</li></ol>";
+                output += "</li></ul>";
                 prevLevel -= 1;
             }
             output += "<li>";
@@ -35,10 +35,10 @@ function createTocMarkup(headers) {
     if (output != "") {
         // Change 2 to the max header level you want in the TOC; in my case, H2
         while (prevLevel >= 2) {
-            output += "</li></ol>";
+            output += "</li></ul>";
             prevLevel -= 1;
         }
-        output = `<h2 class="widget-title">目录索引:</h2>${output}`;
+        output = `<h4 class="widget-title">目录索引</h2>${output}`;
     }
 
     return output;

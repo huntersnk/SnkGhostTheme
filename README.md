@@ -1,7 +1,7 @@
 # SnkGhostTheme
 
-version : 0.5.2 alpha
-update @ 20180915
+version : 0.5.3 alpha
+update @ 20181006
 
 #### changelog
 1. A new refactory ongoing

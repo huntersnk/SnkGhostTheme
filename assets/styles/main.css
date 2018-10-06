@@ -82,8 +82,8 @@ header h6 {
 	top: 0;
 }
 
-.outline-item {
-
+ol li ol li{
+	color: red;
 }
 
 

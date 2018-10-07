@@ -1,18 +1,18 @@
 <div class="container">
+	<div>
+		<h4 id="searchtext" class="results-hide">Search Results:</h4>
+		<section id="results"></section>
+	</div>
 	<div class="post-list">
 		<ul class="list-group list-group-flush">
 			{{#foreach posts}}
 				<li class="list-group-item post-item">
-					<a href="{{url}}" class="post-title text-primary">{{title}}<span style="float:right;">{{date published_at format='YYYY.MM.DD'}}</span></a>
+					<a href="{{url}}" class="post-title">{{title}}<span style="float:right;">{{date published_at format='YYYY.MM.DD'}}</span></a>
 				</li>
 			{{/foreach}}
 		</ul>
 		<nav class="pagi" role="navigation">
 			{{pagination}}
 		</nav>
-	</div>
-	<div>
-		<h4 id="searchtext" class="results-hide">Search Results:</h4>
-		<section id="results"></section>
 	</div>
 </div>

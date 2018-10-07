@@ -1,7 +1,7 @@
 # SnkGhostTheme
 
-version : 0.5.3 alpha
-update @ 20181006
+version : 0.5.4 alpha
+update @ 20181007
 
 #### changelog
 1. A new refactory ongoing
@@ -21,6 +21,13 @@ update @ 20181006
 9. set a new home page
 10. remove search function,tbd
 11. a new home page basic page,need optimize
+
+### New Step
+table of content flow
+
+## Special thx
+
+**Sneezry**
 
 
  MIT License

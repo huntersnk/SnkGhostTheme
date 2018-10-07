@@ -51,7 +51,7 @@ function getTocMarkup(document) {
     var body = document.getElementsByClassName('blog-post')[0];
 
     // Add or remove header tags you do (or don't) want to include in the TOC
-    var headers = body.querySelectorAll('h2, h3, h4, h5, h6');
+    var headers = body.querySelectorAll('h2, h3');
 
     // Change the number to 1 if you want headers no matter what.
     // Or if you want at least 3 headers before generating a TOC, change it to 3.

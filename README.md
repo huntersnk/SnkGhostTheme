@@ -1,29 +1,17 @@
 # SnkGhostTheme
 
-version : 0.5.4 alpha
+version : 0.5.6 beta
 update @ 20181007
 
 #### changelog
-1. A new refactory ongoing
-2. ghost v2.0 support tbd
-3. layout optimize tbd
+1. A new look
+2. ghost v2.0 support
+3. new function table of content
 
 
-#### old changelog
-1. h1-h5 font size changed
-2. quote color and bgcolor change
-3. tag bgcolor change
-4. change version 0.2 to 0.3.0
-5. When width <= 800,moving header behind the content
-6. add search function based on ghostHunterJs and JQuary
-7. add github URL
-8. remove social network weibo and twitter
-9. set a new home page
-10. remove search function,tbd
-11. a new home page basic page,need optimize
-
-### New Step
-table of content flow
+#### tbd
+1. a better design
+2. remove bootstrap
 
 ## Special thx
 
